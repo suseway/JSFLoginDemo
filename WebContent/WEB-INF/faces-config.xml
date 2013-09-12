@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+    version="2.2">
+	<managed-bean>
+		<description>New user bean description</description>
+		<managed-bean-name>userBean</managed-bean-name>
+		<managed-bean-class>com.jsfdemo.bean.UserBean.UserBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<property-name>userName</property-name>
+			<property-class>java.lang.String</property-class>
+			<value>pavel</value>
+		</managed-property>
+		<managed-property>
+			<property-name>password</property-name>
+			<property-class>java.lang.String</property-class>
+			<value></value>
+		</managed-property>
+	</managed-bean>
+	<navigation-rule>
+		<display-name>userLogin</display-name>
+		<from-view-id>/userLogin.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>success</from-outcome>
+			<to-view-id>/userLoginSuccess.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>userLogin</display-name>
+		<from-view-id>/userLogin.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>failure</from-outcome>
+			<to-view-id>/userLogin.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+</faces-config>
