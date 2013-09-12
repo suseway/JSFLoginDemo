@@ -11,3 +11,5 @@ notes:
  * In Eclipse JSF Palete could be opened after you right mouse click on your jsp page and choose "Open Width->Web Page Editor".
  * Navigation rule is located at the bottom after you right click faces-config.xml and choose Faces Config Editor.
  * http://help.eclipse.org/indigo/index.jsp?topic=%2Forg.eclipse.jst.jsf.doc.user%2Fhtml%2Fgettingstarted%2Ftutorial%2FJSFTools_tutorial_JSF20.html
+ 
+ screenshots: see screen folder
